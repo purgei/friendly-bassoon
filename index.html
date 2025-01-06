@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Inventory Platform</h1>
+    <form id="inventory-form">
+        <label for="item-name">Item Name:</label>
+        <input type="text" id="item-name" name="item-name" required><br>
+
+        <label for="item-location">Location:</label>
+        <input type="text" id="item-location" name="item-location" required><br>
+
+        <label for="item-description">Description:</label>
+        <input type="text" id="item-description" name="item-description" required><br>
+
+        <button type="submit">Add Item</button>
+    </form>
+
+    <h2>Inventory List</h2>
+    <input type="text" id="search" placeholder="Search by name...">
+
+    <table id="inventory-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Inventory items will be added here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
